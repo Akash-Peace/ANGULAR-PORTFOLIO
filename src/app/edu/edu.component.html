@@ -1,0 +1,13 @@
+<br #ieducation>&nbsp;<br><br><br><br>
+<h1>EDUCATION</h1>
+<br><br><br><br><br>
+<div class="cards-div">
+    <mat-card class="example-card" *ngFor="let data of education">
+        <mat-card-title>{{data.degree}}</mat-card-title>
+        <br>
+        <p style="font-weight: 500;">University Name: <span style="color:cadetblue;">{{data.university_name}}</span></p>
+        <p style="font-weight: 500;">Course: <span style="color: cadetblue;">{{data.course}}</span></p>
+        <p style="font-weight: 500;">Score: <span style="color: cadetblue;">{{data.score}}</span></p>
+        <p style="font-weight: 500;">Period: <span style="color: cadetblue;">{{data.period}}</span></p>
+    </mat-card>
+</div>

@@ -1,0 +1,26 @@
+.example-card {
+  background-color: rgb(30, 40, 49);
+  color: #F2AA4CFF;
+  border-radius: 10px;
+  width: 450px;
+  margin: 20px;
+}
+@media (max-width: 750px){
+  .cards-div{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+  
+
+.cards-div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.proj-img{
+  object-fit: contain;
+  height: 250px;
+}

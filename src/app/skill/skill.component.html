@@ -1,0 +1,12 @@
+<br #iskills>&nbsp;<br><br><br><br><br><br><br><br><br>
+<h1 style="text-align: center;">SKILLS</h1>
+<br><br><br><br><br>
+<div class="cards-div">
+    <mat-card class="example-card"  *ngFor="let data of skills">
+        <mat-card-title-group>
+        <mat-card-title style="color: #F2AA4CFF;">{{data[0]}}</mat-card-title>
+        <mat-card-subtitle style="color: cadetblue;">{{data[2]}}</mat-card-subtitle>
+        <img mat-card-sm-image src={{data[1]}} >
+        </mat-card-title-group>
+    </mat-card>
+</div>

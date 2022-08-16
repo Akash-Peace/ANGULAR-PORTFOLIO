@@ -1,0 +1,18 @@
+<br #iprojects>&nbsp;<br><br><br><br><br><br><br><br><br>
+<h1 style="text-align: center;">PROJECTS</h1>
+<br><br><br><br><br>
+<div class="cards-div">
+<mat-card class="example-card" *ngFor="let data of projects">
+    <mat-card-header>
+      <mat-card-title>{{data.project_name}}</mat-card-title>
+      <mat-card-subtitle style="color: rgb(255, 221, 0);">{{data.tech_used}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="proj-img" src={{data.proj_img}} alt="proj_img">
+    <mat-card-content>
+      <p style="color: cadetblue;">{{data.proj_desc}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a mat-button href={{data.proj_link}} target="_blank"><mat-icon style="color: rgb(255, 221, 0);">attachment</mat-icon></a>
+    </mat-card-actions>
+</mat-card>
+</div>

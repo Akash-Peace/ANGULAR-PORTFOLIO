@@ -1,0 +1,64 @@
+<mat-toolbar class="header">
+    <h3 class="c1">
+        <span class="el">S</span>
+        <span class="el">h</span>
+        <span class="el">r</span>
+        <span class="el">i&nbsp;</span>
+        <span class="el">S</span>
+        <span class="el">a</span>
+        <span class="el">i</span>
+        <span class="el">l</span>
+        <span class="el">a</span>
+        <span class="el">e</span>
+        <span class="el">s</span>
+        <span class="el">h&nbsp;</span>
+        <span class="el">R</span>
+        <span class="el">a</span>
+        <span class="el">j</span>
+        <span class="el">a</span>
+    </h3>
+    <span class="example-spacer"></span>
+    <a *ngIf="innerWidth > 700" href="#ihome"><button  mat-button class="example-icon">
+      <mat-icon class="icon-col">home</mat-icon>
+      <span class="icon-col"> Home</span>
+    </button></a>
+    <a *ngIf="innerWidth > 700" href="#ieducation"><button mat-button class="example-icon">
+      <mat-icon class="icon-col">menu_book</mat-icon>
+      <span class="icon-col"> Education</span>
+    </button></a>
+    <a *ngIf="innerWidth > 700" href="#iskills"><button mat-button class="example-icon">
+        <mat-icon class="icon-col">code</mat-icon>
+        <span class="icon-col"> Skills</span>
+    </button></a>
+    <a *ngIf="innerWidth > 700" href="#iprojects"><button mat-button class="example-icon">
+        <mat-icon class="icon-col">workspace_premium</mat-icon>
+        <span class="icon-col"> Projects</span>
+    </button></a>
+    <a *ngIf="innerWidth > 700" href="#icontact"><button mat-button class="example-icon">
+        <mat-icon class="icon-col">perm_contact_calender</mat-icon>
+        <span class="icon-col"> Contact</span>
+    </button></a>
+    <button *ngIf="innerWidth < 700" mat-button [matMenuTriggerFor]="beforeMenu"><mat-icon class="icon-col">menu</mat-icon></button>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+            <a style="text-decoration: none;" href="#ihome"><button mat-menu-item class="example-icon">
+                <mat-icon class="icon-col">home</mat-icon>
+                <span class="icon-col"> Home</span>
+              </button></a>
+              <a style="text-decoration: none;" href="#ieducation"><button mat-menu-item class="example-icon">
+                <mat-icon class="icon-col">menu_book</mat-icon>
+                <span class="icon-col"> Education</span>
+              </button></a>
+              <a style="text-decoration: none;" href="#iskills"><button mat-menu-item class="example-icon">
+                  <mat-icon class="icon-col">code</mat-icon>
+                  <span class="icon-col"> Skills</span>
+              </button></a>
+              <a style="text-decoration: none;" href="#iprojects"><button mat-menu-item class="example-icon">
+                  <mat-icon class="icon-col">workspace_premium</mat-icon>
+                  <span class="icon-col"> Projects</span>
+              </button></a>
+              <a style="text-decoration: none;" href="#icontact"><button mat-menu-item class="example-icon">
+                  <mat-icon class="icon-col">perm_contact_calender</mat-icon>
+                  <span class="icon-col"> Contact</span>
+              </button></a>
+        </mat-menu>
+</mat-toolbar>

@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+.example-card {
+    background-color: rgb(30, 40, 49);
+    color: #F2AA4CFF;
+    border-radius: 10px;
+    width: 350px;
+    margin: 20px;
+}
+.cards-div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

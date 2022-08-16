@@ -1,0 +1,12 @@
+<br #icontact><br><br><br><br>
+<br><br><br><br><br>
+<div class="connect-div">
+    <div class="sm-div">
+        <a *ngFor="let data of contact" href={{data[1]}} target="_blank"><img class="sm-icon" src={{data[0]}}></a>
+    </div>
+    <br>
+    <div class="contact-div">
+        <div class="in-contact-div"><mat-icon>mail</mat-icon>&nbsp;&nbsp;&nbsp;<p>{{connect[0]}}</p></div>
+        <div class="in-contact-div"><mat-icon>call</mat-icon>&nbsp;&nbsp;&nbsp;<p>{{connect[1]}}</p></div>
+    </div>
+</div>    
